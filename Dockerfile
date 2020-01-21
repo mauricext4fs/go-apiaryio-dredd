@@ -8,7 +8,7 @@ RUN apk update && apk add --no-cache python make yarn git
 RUN apk add --no-cache musl-dev 
 RUN yarn global add node-gyp
 RUN yarn global add dredd
-RUN yarn global add hercule
+RUN yarn global add hercule api-spec-converter
 USER go
 RUN mkdir -p /go/src
 RUN mkdir -p /go/bin
